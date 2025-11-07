@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgb(210, 224, 238), skyblue, rgb(223, 238, 210));
+        }
+
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #001f3f, #00796b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding-bottom: 2px;
+        }
+
+
+        form {
+            width: 70%;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        .search {
+            background: white url('https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg') no-repeat 10px center;
+            background-size: 16px;
+            padding-left: 40px;
+        }
+
+        nav {
+            background: linear-gradient(90deg, #001f3f, #00796b);
+        }
+
+        a:hover {
+            color: rgb(200, 235, 135);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div>
+            <nav class="d-flex justify-content-center mb-3 fw-bold fixed-top">
+                <a href="#fullname"><i class="bi bi-person-fill"></i></a>
+                <a href="#gmail"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#password"><i class="fa-solid fa-lock"></i></a>
+                <a href="#gender"><i class="fa-solid fa-mars"></i></a>
+                <a href="#skills"><i class="fa-solid fa-lightbulb"></i></a>
+                <a href="#education"><i class="fa-solid fa-user-graduate"></i></a>
+                <a href="#city"><i class="fa-solid fa-location-dot"></i></a>
+                <a href="#comment"><i class="fa-regular fa-comment"></i></a>
+                <a href="#resume"><i class="fa-solid fa-file-import"></i></a>
+                <a href="#button"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form class="mx-auto mt-4">
+            <!-- Search -->
+            <div>
+                <input type="text" placeholder="Search" class="search form-control">
+            </div>
+            <!-- Registration Form Heading -->
+            <h1 class="text-center mt-4 fw-bold gradient-text">--Registration Form--</h1>
+
+            <!-- Full Name -->
+            <div>
+                <label id="user" for="user" class="form-label fw-bold mt-4 text-primary-emphasis">User:</label>
+                <div class="d-flex">
+                    <input type="text" placeholder="First name" class="form-control w-25" id="user" name="user">
+                    &nbsp;&nbsp;
+                    <input type="text" placeholder="Last name" class="form-control w-25" id="user" name="user">
+                </div>
+            </div>
+            <!-- Gmail -->
+            <div>
+                <label id="gmail" for="gmail" class="form-label fw-bold mt-3 text-primary-emphasis">Gmail:</label>
+                <input type="email" placeholder="example123@gmail.com" class="form-control w-50" id="gmail"
+                    name="gmail">
+            </div>
+            <!-- Password -->
+            <div>
+                <label id="password" for="password"
+                    class="form-label fw-bold mt-3 text-primary-emphasis">Password:</label>
+                <input type="password" placeholder="example@123" class="form-control w-50" id="password"
+                    name="password">
+            </div>
+            <!-- Gender -->
+            <div>
+                <label id="gender" class="form-label fw-bold mt-3 d-block text-primary-emphasis">Gender:</label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="gender" id="male" value="male" class="form-check-input">
+                    <label for="male" class="form-check-inline text-primary-emphasis">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="gender" id="female" value="female" class="form-check-input">
+                    <label for="female" class="form-check-inline text-primary-emphasis">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="gender" id="other" value="other" class="form-check-input">
+                    <label for="other" class="form-check-inline text-primary-emphasis">Other</label>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div>
+                <label id="skills" class="form-label fw-bold mt-3 d-block text-primary-emphasis">Skills:</label>
+                <div>
+                    <input type="checkbox" id="html" value="html" class="form-check-input">
+                    <label for="html" class="text-primary-emphasis">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" value="css" class="form-check-input">
+                    <label for="css" class="text-primary-emphasis">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js" value="js" class="form-check-input">
+                    <label for="js" class="text-primary-emphasis">Java Script</label>
+                </div>
+            </div>
+            <!-- Select-Option for Education -->
+            <div>
+                <label id="education" for="education"
+                    class="form-label fw-bold mt-3 d-block text-primary-emphasis">Education:</label>
+
+                <select name="education" id="education" class="form-select w-50">
+                    <option selected disabled value="">Select your current status</option>
+                    <option value="student">Student</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="postgraduate">Postgraduate</option>
+                    <option value="professional">Working Professional</option>
+                </select>
+            </div>
+            <!-- Select-Option for State -->
+            <div>
+                <label id="state" for="state"
+                    class="form-label fw-bold mt-3 d-block text-primary-emphasis">State:</label>
+
+                <select name="state" id="state" class="form-select w-50">
+                    <option selected disabled value="">Select your State</option>
+                    <option value="andhra-pradesh">Andhra Pradesh</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="tamil-nadu">Tamil Nadu</option>
+                </select>
+            </div>
+            <!-- Comment -->
+            <div>
+                <label id="comment" for="comment"
+                    class="form-label fw-bold mt-4 text-primary-emphasis d-block">Comment:</label>
+                <textarea rows="4" name="comment" id="comment" class="form-control"
+                    placeholder="Write something.."></textarea>
+            </div>
+            <!-- Uploading Resume -->
+            <div>
+                <label id="resume" for="resume" class="form-label fw-bold mt-4 text-primary-emphasis d-block">Upload
+                    Resume:</label>
+                <input type="file" class="form-control" id="resume" name="resume">
+            </div>
+            <!-- Button -->
+            <div>
+                <button id="button" type="submit" class="btn btn-primary w-100 my-4">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
